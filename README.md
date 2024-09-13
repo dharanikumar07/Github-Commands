@@ -11,7 +11,7 @@
   <li><a href="#command-7">stash-pop</a></li>
   <li><a href="#command-8">stash-clear</a></li>
   <li><a href="#command-9">git-initialize</a></li>
-  <li><a href="#command-10">git-remote</a></li>
+  <li><a href="#command-10">Add a remote</a></li>
   <li><a href="#command-11">To see remote</a></li>
   <li><a href="#command-12">git-push</a></li>
   <li><a href="#command-13">delete a remote</a></li>
@@ -21,111 +21,27 @@
   <li><a href="#command-17">merge a changes</a></li>
   <li><a href="#command-18">gti-clone</a></li>
   <li><a href="#command-19">remote-upstream</a></li>
-  <li><a href="#command-20"></a></li>
-  <li><a href="#command-21">open</a></li>
-  <li><a href="#command-22">clear</a></li>
-  <li><a href="#command-23">nano</a></li>
-  <li><a href="#command-24">whoami</a></li>
-  <li><a href="#command-25">grep</a></li>
+  <li><a href="#command-20">git-pull</a></li>
 </ul>
 
 
-<h2 id="command-1">ls</h2>
-<p>Lists files and directories in the current directory.</p>
-<pre><code>ls</code></pre>
-
-<h2 id="command-2">pwd</h2>
-<p>Displays the current working directory.</p>
-<pre><code>pwd</code></pre>
-
-<h2 id="command-3">mkdir</h2>
-<p>Creates a new directory.</p>
-<pre><code>mkdir /directory-path/directory-name</code></pre>
-
-<h2 id="command-4">rmdir</h2>
-<p>Removes an empty directory.</p>
-<pre><code>rmdir /director-path/directory-name</code></pre>
-
-<h2 id="command-5">touch</h2>
-<p>Creates an empty file or updates the timestamp of an existing file.</p>
-<pre><code>touch file-name</code></pre>
-
-<h2 id="command-6">cd</h2>
-<p>Changes the current working directory.</p>
-<pre><code>cd /directory-path</code></pre>
-
-<h2 id="command-7">cd ..</h2>
-<p>Moves one directory up.</p>
-<pre><code>cd ..</code></pre>
-
-<h2 id="command-8">ls -a</h2>
-<p> Lists all files, including hidden files.</p>
-<pre><code>ls -a</code></pre>
-
-<h2 id="command-9">ls -l</h2>
-<p>Lists files in long format with detailed information.</p>
-<pre><code>ls -l</code></pre>
-
-<h2 id="command-10">Renaming</h2>
-<p>Renames a file.</p>
-<pre><code>mv oldname.txt newname.txt</code></pre>
-
-<h2 id="command-11">To move</h2>
-<p>Moves a file to a different directory.</p>
-<pre><code>mv file.txt /directory-path-we-want-to-move</code></pre>
-
-<h2 id="command-12">Copy File</h2>
-<p>Copies a file from one location to another.</p>
-<pre><code>cp source.txt destination.txt</code></pre>
-
-<h2 id="command-13">Copy Directory</h2>
-<p>Copies the entire directory /source_dir and its contents (including subdirectories) to /dest_dir</p>
-<pre><code>cp -r /source_dir /dest_dir</code></pre>
-
-<h2 id="command-14">File Permission</h2>
-<p> Changes file permissions recursively to allow full read, write, and execute access to all users.</p>
-<pre><code>sudo chmod -R 777 /path</code></pre>
-
-<h2 id="command-15">Find Files</h2>
-<p>Finds files with a specific pattern in a directory.</p>
-<pre><code>find /path -name "*.txt" </code></pre>
-
-<h2 id="command-16">Curl</h2>
-<p>Downloads a file from a URL.</p>
-<pre><code>curl -O http://example.com/file.zip</code></pre>
-
-<h2 id="command-17">Update packages</h2>
-<p>Updates the package list on Ubuntu/Debian-based systems. </p>
-<pre><code>sudo apt update</code></pre>
-
-<h2 id="command-18">Restart</h2>
-<p>Reboots the system.</p>
-<pre><code>sudo reboot</code></pre>
-
-<h2 id="command-19">Compress as Zip file</h2>
-<p>Compresses a file into a zip archive.</p>
-<pre><code>zip [zip-name] [the-file-name-you-want-to-compress]</code></pre>
-
-<h2 id="command-20">Extract Zip File</h2>
-<p>Extracts files from a zip archive.</p>
-<pre><code>unzip [zip-file-name]</code></pre>
-
-<h2 id="command-21">Open</h2>
-<p>Open a file.</p>
-<pre><code>open filename</code></pre>
-
-<h2 id="command-22">clear</h2>
-<p>The clear command is used to clear the terminal screen</p>
-<pre><code>clear</code></pre>
-
-<h2 id="command-23">nano</h2>
-<p> it opens for editing. If it doesn't exist, nano creates a new file.</p>
-<pre><code>nano file-name</code></pre>
-
-<h2 id="command-24">whoami</h2>
-<p>It print the current username</p>
-<pre><code>pwd</code></pre>
-
-<h2 id="command-25">grep [options] pattern [file]</h2>
-<p>The grep command searches for a specific pattern (text) within files or output and displays matching lines.</p>
-<pre><code>grep "hello" file.txt</code></pre>
+<h2 id="command-1">git-add</h2> <p>Adds files to the staging area in preparation for a commit.</p> <pre><code>git add <file-or-directory></code></pre>
+<h2 id="command-2">git-status</h2> <p>Displays the current state of the working directory and staging area, showing which changes have been staged, modified, or are untracked.</p> <pre><code>git status</code></pre>
+<h2 id="command-3">git-commit</h2> <p>Records changes to the repository with a descriptive message.</p> <pre><code>git commit -m "Your commit message"</code></pre>
+<h2 id="command-4">git-log</h2> <p>Shows the commit history of the repository.</p> <pre><code>git log</code></pre>
+<h2 id="command-5">git-reset</h2> <p>Resets the current HEAD to a specified state, either by un-staging changes, or resetting the working directory.</p> <pre><code>git reset [options] <commit></code></pre>
+<h2 id="command-6">git-stash</h2> <p>Saves the changes in the working directory temporarily, so you can switch to a different branch without committing the changes.</p> <pre><code>git stash</code></pre>
+<h2 id="command-7">stash-pop</h2> <p>Restores the most recently stashed changes and removes them from the stash list.</p> <pre><code>git stash pop</code></pre>
+<h2 id="command-8">stash-clear</h2> <p>Clears all stashes, removing them from the stash list.</p> <pre><code>git stash clear</code></pre>
+<h2 id="command-9">git-initialize</h2> <p>Initializes a new Git repository in the current directory.</p> <pre><code>git init</code></pre>
+<h2 id="command-10">Add a remote</h2> <p>Adds a remote repository URL to your local repository.</p> <pre><code>git remote add origin <remote-url></code></pre>
+<h2 id="command-11">To see remote</h2> <p>Displays the list of remote repositories associated with the local repository.</p> <pre><code>git remote -v</code></pre>
+<h2 id="command-12">git-push</h2> <p>Uploads local commits to a remote repository.</p> <pre><code>git push origin <branch-name></code></pre>
+<h2 id="command-13">delete a remote</h2> <p>Removes a remote repository from the local configuration.</p> <pre><code>git remote remove <remote-name></code></pre>
+<h2 id="command-14">create branch</h2> <p>Creates a new branch.</p> <pre><code>git branch <branch-name></code></pre>
+<h2 id="command-15">delete branch</h2> <p>Deletes a local branch.</p> <pre><code>git branch -d <branch-name></code></pre>
+<h2 id="command-16">checkout branch</h2> <p>Switches to the specified branch or restores files in the working directory to a specific commit.</p> <pre><code>git checkout <branch-name></code></pre>
+<h2 id="command-17">merge changes</h2> <p>Merges changes from a specified branch into the current branch.</p> <pre><code>git merge <branch-name></code></pre>
+<h2 id="command-18">git-clone</h2> <p>Clones a remote repository to your local machine.</p> <pre><code>git clone <repository-url></code></pre>
+<h2 id="command-19">remote-upstream</h2> <p>Adds a secondary remote repository (usually for a fork) to your local repository.</p> <pre><code>git remote add upstream <upstream-repo-url></code></pre>
+<h2 id="command-20">git-pull</h2> <p>Fetches changes from a remote repository and merges them into your current branch.</p> <pre><code>git pull origin <branch-name></code></pre>
