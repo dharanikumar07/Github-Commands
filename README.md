@@ -29,20 +29,30 @@
 <p>Adds files to the staging area in preparation for a commit.</p> 
 <pre><code>git add <file-or-directory></code></pre>
   
-<h2 id="command-2">git-status</h2> <p>Displays the current state of the working directory and staging area, showing which changes have been staged, modified, or are untracked.</p> <pre><code>git status</code></pre>
+<h2 id="command-2">git-status</h2> 
+<p>Displays the current state of the working directory and staging area, showing which changes have been staged, modified, or are untracked.</p> <pre><code>git status</code></pre>
 
-<h2 id="command-3">git-commit</h2> <p>Records changes to the repository with a descriptive message.</p> <pre><code>git commit -m "Your commit message"</code></pre>
+<h2 id="command-3">git-commit</h2> 
+<p>Records changes to the repository with a descriptive message.</p> 
+<pre><code>git commit -m "Your commit message"</code></pre>
 
 <h2 id="command-4">git-log</h2> <p>Shows the commit history of the repository.</p> <pre><code>git log</code></pre>
 <h2 id="command-5">git-reset</h2> <p>Resets the current HEAD to a specified state, either by un-staging changes, or resetting the working directory.</p> <pre><code>git reset [options] <commit></code></pre>
   
-<h2 id="command-6">git-stash</h2> <p>Saves the changes in the working directory temporarily, so you can switch to a different branch without committing the changes.</p> <pre><code>git stash</code></pre>
+<h2 id="command-6">git-stash</h2> 
+<p>Saves the changes in the working directory temporarily, so you can switch to a different branch without committing the changes.</p> <pre><code>git stash</code></pre>
 
-<h2 id="command-7">stash-pop</h2> <p>Restores the most recently stashed changes and removes them from the stash list.</p> <pre><code>git stash pop</code></pre>
+<h2 id="command-7">stash-pop</h2> 
+<p>Restores the most recently stashed changes and removes them from the stash list.</p> 
+<pre><code>git stash pop</code></pre>
 
-<h2 id="command-8">stash-clear</h2> <p>Clears all stashes, removing them from the stash list.</p> <pre><code>git stash clear</code></pre>
+<h2 id="command-8">stash-clear</h2> 
+<p>Clears all stashes, removing them from the stash list.</p>
+<pre><code>git stash clear</code></pre>
 
-<h2 id="command-9">git-initialize</h2> <p>Initializes a new Git repository in the current directory.</p> <pre><code>git init</code></pre>
+<h2 id="command-9">git-initialize</h2> 
+<p>Initializes a new Git repository in the current directory.
+</p> <pre><code>git init</code></pre>
 
 <h2 id="command-10">Add a remote</h2> 
 <p>Adds a remote repository URL to your local repository.</p> 
