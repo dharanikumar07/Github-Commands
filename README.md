@@ -24,6 +24,7 @@
   <li><a href="#command-20">remote-upstream</a></li>
   <li><a href="#command-21">git-pull</a></li>
   <li><a href="#command-22">restore a staged file</a></li>
+  <li><a href="#command-23">unintialize .git</a></li>
 </ul>
 
 
@@ -112,3 +113,7 @@
 <h2 id="command-22">restore a staged file</h2> 
 <p>unstages a file, removing it from the next commit while keeping the changes in your working directory.</p> 
 <pre><code>git restore --staged (file-name)</code></pre>
+
+<h2 id="command-22">unitialize .git</h2> 
+<p>Removes the .git file in the directory</p> 
+<pre><code>rm -rf .git</code></pre>
