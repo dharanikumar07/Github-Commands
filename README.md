@@ -27,8 +27,8 @@
 
 
 <h2 id="command-1">git-add</h2> 
-<p>Adds files to the staging area in preparation for a commit.</p> 
-<pre><code>git add <file-or-directory></code></pre>
+<p>Adds files to the staging area in preparation for a commit.To add all files use ( . )</p> 
+<pre><code>git add file-or-directory</code></pre>
   
 <h2 id="command-2">git-status</h2> 
 <p>Displays the current state of the working directory and staging area, showing which changes have been staged, modified, or are untracked.</p> <pre><code>git status</code></pre>
@@ -37,8 +37,13 @@
 <p>Records changes to the repository with a descriptive message.</p> 
 <pre><code>git commit -m "Your commit message"</code></pre>
 
-<h2 id="command-4">git-log</h2> <p>Shows the commit history of the repository.</p> <pre><code>git log</code></pre>
-<h2 id="command-5">git-reset</h2> <p>Resets the current HEAD to a specified state, either by un-staging changes, or resetting the working directory.</p> <pre><code>git reset [options] <commit></code></pre>
+<h2 id="command-4">git-log</h2> 
+<p>Shows the commit history of the repository.</p> 
+<pre><code>git log</code></pre>
+
+<h2 id="command-5">git-reset</h2> 
+<p>Resets the current HEAD to a specified state, either by un-staging changes, or resetting the working directory.</p>
+<pre><code>git reset commit-hash-id</code></pre>
   
 <h2 id="command-6">git-stash</h2> 
 <p>Saves the changes in the working directory temporarily, so you can switch to a different branch without committing the changes.</p> <pre><code>git stash</code></pre>
@@ -57,7 +62,7 @@
 
 <h2 id="command-10">Add a remote</h2> 
 <p>Adds a remote repository URL to your local repository.</p> 
-<pre><code>git remote add origin <remote-url></code></pre>
+<pre><code>git remote add origin remote-url</code></pre>
   
 <h2 id="command-11">To see remote</h2> 
 <p>Displays the list of remote repositories associated with the local repository.</p> 
@@ -65,15 +70,15 @@
 
 <h2 id="command-12">git-push</h2> 
 <p>Uploads local commits to a remote repository.</p> 
-<pre><code>git push origin <branch-name></code></pre>
+<pre><code>git push origin branch-name </code></pre>
   
 <h2 id="command-13">delete a remote</h2> 
 <p>Removes a remote repository from the local configuration.</p> 
-<pre><code>git remote remove <remote-name></code></pre>
+<pre><code>git remote remove remote-name </code></pre>
   
 <h2 id="command-14">create branch</h2> 
 <p>Creates a new branch.</p> 
-<pre><code>git branch <branch-name></code></pre>
+<pre><code>git branch branch-name </code></pre>
   
 <h2 id="command-15">delete branch</h2>
 <p>Deletes a local branch.</p> 
@@ -97,7 +102,7 @@
   
 <h2 id="command-20">remote-upstream</h2> 
 <p>Adds a secondary remote repository (usually for a fork) to your local repository.</p>
-<pre><code>git remote add upstream <upstream-repo-url></code></pre>
+<pre><code>git remote add upstream <upstream-repo-url> </code></pre>
   
 <h2 id="command-21">git-pull</h2> 
 <p>Fetches changes from a remote repository and merges them into your current branch.</p> 
