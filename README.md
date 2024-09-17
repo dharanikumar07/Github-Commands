@@ -102,8 +102,8 @@
   
 <h2 id="command-20">remote-upstream</h2> 
 <p>Adds a secondary remote repository (usually for a fork) to your local repository.</p>
-<pre><code>git remote add upstream <upstream-repo-url> </code></pre>
+<pre><code>git remote add upstream upstream-repo-url </code></pre>
   
 <h2 id="command-21">git-pull</h2> 
 <p>Fetches changes from a remote repository and merges them into your current branch.</p> 
-<pre><code>git pull origin <branch-name></code></pre>
+<pre><code>git pull origin branch-name </code></pre>
