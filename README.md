@@ -17,12 +17,13 @@
   <li><a href="#command-13">delete a remote</a></li>
   <li><a href="#command-14">create branch</a></li>
   <li><a href="#command-15">delete branch</a></li>
-   <li><a href="#command-16">delete remote branch</a></li>
+  <li><a href="#command-16">delete remote branch</a></li>
   <li><a href="#command-17">checkout branch</a></li>
   <li><a href="#command-18">merge a changes</a></li>
   <li><a href="#command-19">gti-clone</a></li>
   <li><a href="#command-20">remote-upstream</a></li>
   <li><a href="#command-21">git-pull</a></li>
+  <li><a href="#command-22">restore a staged file</a></li>
 </ul>
 
 
@@ -107,3 +108,7 @@
 <h2 id="command-21">git-pull</h2> 
 <p>Fetches changes from a remote repository and merges them into your current branch.</p> 
 <pre><code>git pull origin (branch-name) </code></pre>
+
+<h2 id="command-22">restore a staged file</h2> 
+<p>unstages a file, removing it from the next commit while keeping the changes in your working directory.</p> 
+<pre><code>git restore --staged (file-name)</code></pre>
