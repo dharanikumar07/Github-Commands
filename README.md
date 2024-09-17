@@ -17,11 +17,12 @@
   <li><a href="#command-13">delete a remote</a></li>
   <li><a href="#command-14">create branch</a></li>
   <li><a href="#command-15">delete branch</a></li>
-  <li><a href="#command-16">checkout branch</a></li>
-  <li><a href="#command-17">merge a changes</a></li>
-  <li><a href="#command-18">gti-clone</a></li>
-  <li><a href="#command-19">remote-upstream</a></li>
-  <li><a href="#command-20">git-pull</a></li>
+   <li><a href="#command-16">delete remote branch</a></li>
+  <li><a href="#command-17">checkout branch</a></li>
+  <li><a href="#command-18">merge a changes</a></li>
+  <li><a href="#command-19">gti-clone</a></li>
+  <li><a href="#command-20">remote-upstream</a></li>
+  <li><a href="#command-21">git-pull</a></li>
 </ul>
 
 
@@ -76,24 +77,28 @@
   
 <h2 id="command-15">delete branch</h2>
 <p>Deletes a local branch.</p> 
-<pre><code>git branch -d <branch-name></code></pre>
+<pre><code>git branch -d branch-name</code></pre>
   
-<h2 id="command-16">checkout branch</h2> 
+<h2 id="command-16">delete remote branch</h2>
+<p>This command deletes a branch from a remote repository.</p> 
+<pre><code>git push origin --delete branch-name</code></pre>
+  
+<h2 id="command-17">checkout branch</h2> 
 <p>Switches to the specified branch or restores files in the working directory to a specific commit.</p>
-<pre><code>git checkout <branch-name></code></pre>
+<pre><code>git checkout branch-name</code></pre>
   
-<h2 id="command-17">merge changes</h2> 
+<h2 id="command-18">merge changes</h2> 
 <p>Merges changes from a specified branch into the current branch.</p> 
-<pre><code>git merge <branch-name></code></pre>
+<pre><code>git merge branch-name</code></pre>
   
-<h2 id="command-18">git-clone</h2> 
+<h2 id="command-19">git-clone</h2> 
 <p>Clones a remote repository to your local machine.</p> 
-<pre><code>git clone <repository-url></code></pre>
+<pre><code>git clone repository-url</code></pre>
   
-<h2 id="command-19">remote-upstream</h2> 
+<h2 id="command-20">remote-upstream</h2> 
 <p>Adds a secondary remote repository (usually for a fork) to your local repository.</p>
 <pre><code>git remote add upstream <upstream-repo-url></code></pre>
   
-<h2 id="command-20">git-pull</h2> 
+<h2 id="command-21">git-pull</h2> 
 <p>Fetches changes from a remote repository and merges them into your current branch.</p> 
 <pre><code>git pull origin <branch-name></code></pre>
