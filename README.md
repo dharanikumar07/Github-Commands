@@ -18,13 +18,14 @@
   <li><a href="#command-14">create branch</a></li>
   <li><a href="#command-15">delete branch</a></li>
   <li><a href="#command-16">delete remote branch</a></li>
-  <li><a href="#command-17">checkout branch</a></li>
-  <li><a href="#command-18">merge a changes</a></li>
-  <li><a href="#command-19">gti-clone</a></li>
-  <li><a href="#command-20">remote-upstream</a></li>
-  <li><a href="#command-21">git-pull</a></li>
-  <li><a href="#command-22">restore a staged file</a></li>
-  <li><a href="#command-23">unintialize .git</a></li>
+  <li><a href="#command-17">View Branch</a></li>
+  <li><a href="#command-18">checkout branch</a></li>
+  <li><a href="#command-19">merge a changes</a></li>
+  <li><a href="#command-20">gti-clone</a></li>
+  <li><a href="#command-21">remote-upstream</a></li>
+  <li><a href="#command-22">git-pull</a></li>
+  <li><a href="#command-23">restore a staged file</a></li>
+  <li><a href="#command-24">unintialize .git</a></li>
 </ul>
 
 
@@ -73,7 +74,7 @@
 <h2 id="command-12">git-push</h2> 
 <p>Uploads local commits to a remote repository.</p> 
 <pre><code>git push origin (branch-name) </code></pre>
-  
+
 <h2 id="command-13">delete a remote</h2> 
 <p>Removes a remote repository from the local configuration.</p> 
 <pre><code>git remote remove (remote-name) </code></pre>
@@ -89,31 +90,35 @@
 <h2 id="command-16">delete remote branch</h2>
 <p>This command deletes a branch from a remote repository.</p> 
 <pre><code>git push origin --delete (branch-name) </code></pre>
+
+<h2 id="command-17">View branch</h2> 
+<p>to view all branch.</p> 
+<pre><code>git branch a</code></pre>
   
-<h2 id="command-17">checkout branch</h2> 
+<h2 id="command-18">checkout branch</h2> 
 <p>Switches to the specified branch or restores files in the working directory to a specific commit.</p>
 <pre><code>git checkout (branch-name) </code></pre>
   
-<h2 id="command-18">merge changes</h2> 
+<h2 id="command-19">merge changes</h2> 
 <p>Merges changes from a specified branch into the current branch.</p> 
 <pre><code>git merge (branch-name) </code></pre>
   
-<h2 id="command-19">git-clone</h2> 
+<h2 id="command-20">git-clone</h2> 
 <p>Clones a remote repository to your local machine.</p> 
 <pre><code>git clone (repository-url) </code></pre>
   
-<h2 id="command-20">remote-upstream</h2> 
+<h2 id="command-21">remote-upstream</h2> 
 <p>Adds a secondary remote repository (usually for a fork) to your local repository.</p>
 <pre><code>git remote add upstream (upstream-repo-url) </code></pre>
   
-<h2 id="command-21">git-pull</h2> 
+<h2 id="command-22">git-pull</h2> 
 <p>Fetches changes from a remote repository and merges them into your current branch.</p> 
 <pre><code>git pull origin (branch-name) </code></pre>
 
-<h2 id="command-22">restore a staged file</h2> 
+<h2 id="command-23">restore a staged file</h2> 
 <p>unstages a file, removing it from the next commit while keeping the changes in your working directory.</p> 
 <pre><code>git restore --staged (file-name)</code></pre>
 
-<h2 id="command-22">unitialize .git</h2> 
+<h2 id="command-24">unitialize .git</h2> 
 <p>Removes the .git file in the directory</p> 
 <pre><code>rm -rf .git</code></pre>
