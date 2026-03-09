@@ -26,6 +26,8 @@
   <li><a href="#command-22">git-pull</a></li>
   <li><a href="#command-23">restore a staged file</a></li>
   <li><a href="#command-24">unintialize .git</a></li>
+  <li><a href="#command-25">show current branch name</a></li>
+  
 </ul>
 
 
@@ -122,3 +124,7 @@
 <h2 id="command-24">unitialize .git</h2> 
 <p>Removes the .git file in the directory</p> 
 <pre><code>rm -rf .git</code></pre>
+
+<h2 id="command-25">Show current branch</h2> 
+<p>Show the current branch of the repo</p> 
+<pre><code>git branch --show-current</code></pre>
